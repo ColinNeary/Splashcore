@@ -39,5 +39,5 @@ func _on_lifetime_timer_timeout() -> void:
 
 # When potion collides with something, shatter the pie
 func _on_body_entered(_body: Node) -> void:
-	gibblets.spawn_self()
+	gibblets.spawn_self(self.linear_velocity, self.angular_velocity)
 	self.queue_free()
