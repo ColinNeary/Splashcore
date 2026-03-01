@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://cptqo4sa5ohln" path="res://Assets/Graphics/grass.png" id="1_v2ubc"]
 [ext_resource type="Texture2D" uid="uid://dlko15ldrsixy" path="res://Assets/Bubble/BubbleTexture.png" id="2_v2ubc"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Scenes/Entities/Player/Player.tscn" id="3_8q64x"]
-[ext_resource type="PackedScene" uid="uid://bh3j4rm52laj" path="res://Scenes/Potion/Shard.tscn" id="5_8q64x"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_yivkk"]
 sky_top_color = Color(0, 0.4392157, 0.44705883, 1)
@@ -60,8 +59,5 @@ surface_material_override/0 = SubResource("StandardMaterial3D_6y65m")
 
 [node name="Player" parent="." unique_id=1376156938 instance=ExtResource("3_8q64x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11685705, 0)
-
-[node name="Shard" parent="." unique_id=487336626 instance=ExtResource("5_8q64x")]
-transform = Transform3D(1, 0, 0, 0, 0.65257466, 0.75772446, 0, -0.75772446, 0.65257466, 8.323949, 2.261913, -0.5601666)
 
 [editable path="Bubble"]
